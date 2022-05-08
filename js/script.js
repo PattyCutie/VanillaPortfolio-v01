@@ -22,8 +22,6 @@ const nav = document.querySelector(".nav"),
         })
 }
 function showSection(element) {
-    const href = element.getAttribute("href").split(".#");
-    target = href[1];
+    const target = element.getAttribute("href").split("#")[1];
     console.log(target)
-
-    }
+}
