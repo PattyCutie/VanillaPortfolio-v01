@@ -171,16 +171,32 @@ ul {
 
 
 /* Sections */
-.main-content {
+/*.main-content {  //comment style this then styling sliding side nav//
     padding-left: 270px;
-}
+}*/
 .section {
     display: block;
     background: var(--bg-black-900);
     min-height: 100vh;
     padding: 0 30px;
     opacity: 1;
+    /* add this to styling slide side nav */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 270px;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
+/* And after setting additionall styling for slide nav then add this section.active*/
+.section.active {
+    z-index: 2;
+    opacity: 1;
+}
+
+
 .hidden {
     display: none !important;
 }
@@ -240,7 +256,7 @@ ul {
     font-size: 16px;
     font-weight: 600;
     padding: 10px 35px;
-    border-radius:  15px 0;
+    border-radius:  15px 5px;
     color: white;
     border: none;
     background: var(--skin-color);
@@ -319,7 +335,7 @@ h3.my-profession {
 }
 .home .home-img img {
     margin: auto;
-    border-radius: 5px; 
+    border-radius: 5px 100px; 
     height: 300px;
 }
 /* About Me */ 
