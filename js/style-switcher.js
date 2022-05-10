@@ -5,7 +5,7 @@ styleSwitcherToggle.addEventListener("click", () => {
 })
 
 // hide Style Switcher on scoll
-window.addEventListener("scroll", () => {
+window.addEventListener("wheel", () => {
     if (document.querySelector(".style-switcher").classList.contains("open")) {
         document.querySelector(".style-switcher").classList.remove("open");
     }
