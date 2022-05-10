@@ -9,6 +9,7 @@ window.addEventListener("scroll", () => {
     if (document.querySelector(".style-switcher").classList.contains("open")) {
         document.querySelector(".style-switcher").classList.remove("open");
     }
+    
 })
 
 /* === Theme Color === */
@@ -19,7 +20,7 @@ function setActiveStyle(color) {
             style.removeAttribute("disabled");
         }
         else {
-            style.setAttribute("disabled" , "true")
+            style.setAttribute("disabled", "true")
         }
     })
 }

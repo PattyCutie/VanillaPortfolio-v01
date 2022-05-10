@@ -4,7 +4,7 @@ var typed = new Typed(".typing", {
     typeSpeed: 80,
     backSpeed: 60,
     loop: true
-})
+});
 
 /* ######## Aside section ######## */
 const nav = document.querySelector(".nav"),
@@ -16,7 +16,7 @@ const nav = document.querySelector(".nav"),
 
     for (let i = 0; i < totalNavList; i++) {
         const a = navList[i].querySelector("a");
-        a.addEventListener("click", function () {
+        a.addEventListener("click", function() {
         //for (let i = 0; i < totalSection; i++) 
         //{allSection[i].classList.remove("back-section")} 
             removeBackSection();
@@ -62,6 +62,7 @@ function showSection(element) {
     document.querySelector("#" + target).classList.add("active")
 }
 ////
+
 // hire me> about section btn //
 function updateNav(element) {
     for (let i = 0; i < totalNavList; i++) {
@@ -74,7 +75,7 @@ function updateNav(element) {
     }
 }
 ////
-document.querySelector(".hire-me").addEventListener("click", function () {
+document.querySelector(".hire-me").addEventListener("click", function() {
     const sectionIndex = this.getAttribute("data-section-index");
     //console.log(sectionIndex);
     showSection(this);
